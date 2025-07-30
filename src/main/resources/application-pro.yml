@@ -7,7 +7,7 @@ MyServer:
   PORT: 8090
 
   Database:
-    HOST: dpg-d24pesndiees739h8lag-a:5432
-    DB_USERNAME: qr_menu_fekf
+    HOST: dpg-d24q1gp5pdvs73c4ko0g-a:5432
+    DB_USERNAME: qr_menu_dtqy
     USER: root
-    PASS: "174iCRbEMc2tgohWX7UMF7Q3bOGRcUBm"
+    PASS: "L1Y8ZZFh8K73yu03Clp4yZqcKMsxvnm2"
