@@ -1,14 +1,17 @@
-# Use an official OpenJDK runtime as a parent image
+#
+# Build stage
+#
+FROM maven:3.9.5-openjdk-21 AS build
+WORKDIR /app
+COPY . /app/
+RUN mvn clean package -DskipTests
+
+#
+# package stage
+#
 FROM openjdk:21-jdk-slim
-
-# Set the working directory in the container
-WORKDIR /code
-
-# Copy the project JAR file into the container at /code
-COPY target/*.jar /code/qr_menu.jar
-
-# Expose the port the app runs on
+WORKDIR /app
+COPY --from=build /app/target/*.jar /app/qr_menu.jar
 EXPOSE 8083
-
 # Run the JAR file
 ENTRYPOINT ["java", "-jar", "qr_menu.jar"]
