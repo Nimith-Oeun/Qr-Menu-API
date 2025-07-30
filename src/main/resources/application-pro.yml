@@ -1,0 +1,13 @@
+#===================================================================
+# development Configuration environment
+#===================================================================
+
+#Database configuration
+MyServer:
+  PORT: 8090
+
+  Database:
+    HOST: dpg-d24pesndiees739h8lag-a:5432
+    DB_USERNAME: qr_menu_fekf
+    USER: root
+    PASS: "174iCRbEMc2tgohWX7UMF7Q3bOGRcUBm"

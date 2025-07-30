@@ -3,15 +3,18 @@ spring:
   application:
     name: qr_menu
 
+  profiles:
+    active: pro
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/qr_menu
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:P@ssw0rd()SQL}
+    url: jdbc:postgresql://${MyServer.Database.HOST}/${MyServer.Database.DB_USERNAME}
+    username: ${MyServer.Database.USER}
+    password: ${MyServer.Database.PASS}
     driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: false
     properties:
       hibernate:
@@ -35,7 +38,7 @@ spring:
       max-request-size: 10MB
 
 server:
-  port: 8090
+  port: ${MyServer.PORT}
   servlet:
     context-path: /
 

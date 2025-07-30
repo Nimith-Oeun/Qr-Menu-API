@@ -1,0 +1,13 @@
+#===================================================================
+# development Configuration environment
+#===================================================================
+
+#Database configuration
+MyServer:
+  PORT: 8090
+
+  Database:
+    HOST: localhost:5432
+    DB_USERNAME: qr_menu
+    USER: postgres
+    PASS: "P@ssw0rd()SQL"
