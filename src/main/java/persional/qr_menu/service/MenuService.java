@@ -36,10 +36,12 @@ public class MenuService {
     public MenuResponseDto getMenuSeparated() {
         List<MenuItemDto> drinks = getItemsByCategory(CategoryType.DRINK);
         List<MenuItemDto> foods = getItemsByCategory(CategoryType.FOOD);
+        List<MenuItemDto> foodSets = getItemsByCategory(CategoryType.FOOD_SET);
         
         return MenuResponseDto.builder()
                 .drinks(drinks)
                 .foods(foods)
+                .foodSets(foodSets)
                 .build();
     }
     

@@ -14,4 +14,5 @@ import java.util.List;
 public class MenuResponseDto {
     private List<MenuItemDto> drinks;
     private List<MenuItemDto> foods;
+    private List<MenuItemDto> foodSets;
 }

@@ -7,10 +7,6 @@
 
 package persional.qr_menu.config;
 
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.servers.Server;
@@ -21,14 +17,6 @@ import org.springframework.context.annotation.Configuration;
 import java.util.ArrayList;
 
 @Configuration
-//@OpenAPIDefinition(
-//        security = @SecurityRequirement(name = "basicAuth") // Secures all endpoints globally
-//)
-//@SecurityScheme(
-//        name = "basicAuth", //Matches the name used in @SecurityRequirement
-//        type = SecuritySchemeType.HTTP,
-//        scheme = "basic" //Tells Swagger to use HTTP Basic Authentication
-//)
 public class SwaggerConfig {
 
     @Value("${server.port}")
