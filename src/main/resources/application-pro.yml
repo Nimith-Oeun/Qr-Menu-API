@@ -1,5 +1,5 @@
 #===================================================================
-# development Configuration environment
+# Production Configuration environment
 #===================================================================
 
 #Database configuration
@@ -11,3 +11,24 @@ MyServer:
     DB_USERNAME: qr_menu_dtqy
     USER: root
     PASS: "L1Y8ZZFh8K73yu03Clp4yZqcKMsxvnm2"
+
+#Redis configuration for production
+spring:
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 10
+          max-idle: 5
+          min-idle: 0
+          max-wait: -1ms
+  
+  cache:
+    type: redis
+    redis:
+      time-to-live: 7200000 # 2 hours for production
+      cache-null-values: false

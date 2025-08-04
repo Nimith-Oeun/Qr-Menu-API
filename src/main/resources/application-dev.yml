@@ -11,3 +11,23 @@ MyServer:
     DB_USERNAME: qr_menu
     USER: postgres
     PASS: "P@ssw0rd()SQL"
+
+#Redis configuration for development
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+          max-wait: -1ms
+  
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000 # 1 hour
+      cache-null-values: false
