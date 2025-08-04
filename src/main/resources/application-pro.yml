@@ -12,23 +12,24 @@ MyServer:
     USER: root
     PASS: "L1Y8ZZFh8K73yu03Clp4yZqcKMsxvnm2"
 
-#Redis configuration for production
+# Redis configuration for production
 spring:
   data:
     redis:
-      host: ${REDIS_HOST:localhost}
+      host: ${REDIS_HOST:red-d2850nvdiees73d9lhng}
       port: ${REDIS_PORT:6379}
-      password: ${REDIS_PASSWORD:}
       timeout: 2000ms
+      ssl:
+        enabled: false
       lettuce:
         pool:
           max-active: 10
           max-idle: 5
           min-idle: 0
           max-wait: -1ms
-  
+
   cache:
     type: redis
     redis:
-      time-to-live: 7200000 # 2 hours for production
+      time-to-live: 7200000 # 2 hours
       cache-null-values: false
