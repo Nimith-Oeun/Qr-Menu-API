@@ -1839,3 +1839,185 @@ java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to cl
 2025-08-04T12:29:24.242+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
 2025-08-04T12:29:24.252+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Started QrMenuApplication in 1.04 seconds (process running for 114.137)
 2025-08-04T12:29:24.254+07:00  INFO 20860 --- [qr_menu] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-04T12:34:57.979+07:00  INFO 20860 --- [qr_menu] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-08-04T12:34:57.981+07:00  INFO 20860 --- [qr_menu] [Thread-8] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-04T12:34:57.996+07:00  INFO 20860 --- [qr_menu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-04T12:34:58.004+07:00  INFO 20860 --- [qr_menu] [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:34:58.006+07:00  INFO 20860 --- [qr_menu] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-04T12:34:58.007+07:00  INFO 20860 --- [qr_menu] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-04T12:34:58.092+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Starting QrMenuApplication using Java 21.0.1 with PID 20860 (D:\School\Spring Boot\Qr-Menu-API\target\classes started by Nimith-Oeun in D:\School\Spring Boot\Qr-Menu-API)
+2025-08-04T12:34:58.092+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : The following 1 profile is active: "dev"
+2025-08-04T12:34:58.329+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:34:58.330+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-04T12:34:58.341+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-08-04T12:34:58.345+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:34:58.346+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-04T12:34:58.348+07:00  INFO 20860 --- [qr_menu] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface persional.qr_menu.repository.MenuItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-04T12:34:58.349+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2025-08-04T12:34:58.470+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-04T12:34:58.472+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-04T12:34:58.472+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-04T12:34:58.492+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-04T12:34:58.492+07:00  INFO 20860 --- [qr_menu] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 398 ms
+2025-08-04T12:34:58.555+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-04T12:34:58.558+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-04T12:34:58.564+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-04T12:34:58.565+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-04T12:34:58.606+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@25b770c5
+2025-08-04T12:34:58.607+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-04T12:34:58.613+07:00  WARN 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-04T12:34:58.615+07:00  INFO 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-04T12:34:58.651+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-04T12:34:58.666+07:00  INFO 20860 --- [qr_menu] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:34:58.785+07:00  WARN 20860 --- [qr_menu] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-04T12:34:58.799+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-08-04T12:34:59.015+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-04T12:34:59.021+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-04T12:34:59.043+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-08-04T12:34:59.049+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Started QrMenuApplication in 0.983 seconds (process running for 448.934)
+2025-08-04T12:34:59.051+07:00  INFO 20860 --- [qr_menu] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-04T12:35:35.945+07:00  INFO 20860 --- [qr_menu] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-04T12:35:35.950+07:00  INFO 20860 --- [qr_menu] [Thread-12] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-04T12:35:35.976+07:00  INFO 20860 --- [qr_menu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-04T12:35:35.990+07:00  INFO 20860 --- [qr_menu] [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:35:35.991+07:00  INFO 20860 --- [qr_menu] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-04T12:35:35.996+07:00  INFO 20860 --- [qr_menu] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-04T12:35:36.128+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Starting QrMenuApplication using Java 21.0.1 with PID 20860 (D:\School\Spring Boot\Qr-Menu-API\target\classes started by Nimith-Oeun in D:\School\Spring Boot\Qr-Menu-API)
+2025-08-04T12:35:36.128+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : The following 1 profile is active: "dev"
+2025-08-04T12:35:36.427+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:35:36.427+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-04T12:35:36.442+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-08-04T12:35:36.446+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:35:36.446+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-04T12:35:36.449+07:00  INFO 20860 --- [qr_menu] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface persional.qr_menu.repository.MenuItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-04T12:35:36.450+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-08-04T12:35:36.537+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-04T12:35:36.538+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-04T12:35:36.538+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-04T12:35:36.567+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-04T12:35:36.568+07:00  INFO 20860 --- [qr_menu] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 439 ms
+2025-08-04T12:35:36.637+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-04T12:35:36.641+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-04T12:35:36.648+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-04T12:35:36.649+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-04T12:35:36.702+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@6322aa7
+2025-08-04T12:35:36.703+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-04T12:35:36.713+07:00  WARN 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-04T12:35:36.717+07:00  INFO 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-04T12:35:36.774+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-04T12:35:36.793+07:00  INFO 20860 --- [qr_menu] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:35:36.922+07:00  WARN 20860 --- [qr_menu] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-04T12:35:36.939+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-08-04T12:35:37.134+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-04T12:35:37.139+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-04T12:35:37.162+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-08-04T12:35:37.168+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Started QrMenuApplication in 1.089 seconds (process running for 487.054)
+2025-08-04T12:35:37.171+07:00  INFO 20860 --- [qr_menu] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-04T12:35:38.553+07:00  INFO 20860 --- [qr_menu] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-04T12:35:38.555+07:00  INFO 20860 --- [qr_menu] [Thread-16] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-04T12:35:38.569+07:00  INFO 20860 --- [qr_menu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-04T12:35:38.575+07:00  INFO 20860 --- [qr_menu] [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:35:38.576+07:00  INFO 20860 --- [qr_menu] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-04T12:35:38.577+07:00  INFO 20860 --- [qr_menu] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-04T12:35:38.655+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Starting QrMenuApplication using Java 21.0.1 with PID 20860 (D:\School\Spring Boot\Qr-Menu-API\target\classes started by Nimith-Oeun in D:\School\Spring Boot\Qr-Menu-API)
+2025-08-04T12:35:38.656+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : The following 1 profile is active: "dev"
+2025-08-04T12:35:38.877+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:35:38.877+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-04T12:35:38.889+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-08-04T12:35:38.892+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:35:38.892+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-04T12:35:38.895+07:00  INFO 20860 --- [qr_menu] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface persional.qr_menu.repository.MenuItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-04T12:35:38.895+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2025-08-04T12:35:38.985+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-04T12:35:38.987+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-04T12:35:38.987+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-04T12:35:39.003+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-04T12:35:39.003+07:00  INFO 20860 --- [qr_menu] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 345 ms
+2025-08-04T12:35:39.057+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-04T12:35:39.060+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-04T12:35:39.067+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-04T12:35:39.068+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-04T12:35:39.105+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@7f740783
+2025-08-04T12:35:39.106+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-04T12:35:39.112+07:00  WARN 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-04T12:35:39.113+07:00  INFO 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-04T12:35:39.156+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-04T12:35:39.170+07:00  INFO 20860 --- [qr_menu] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:35:39.261+07:00  WARN 20860 --- [qr_menu] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-04T12:35:39.273+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-08-04T12:35:39.428+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-04T12:35:39.430+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-04T12:35:39.457+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-08-04T12:35:39.465+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Started QrMenuApplication in 0.833 seconds (process running for 489.35)
+2025-08-04T12:35:39.467+07:00  INFO 20860 --- [qr_menu] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-04T12:35:54.058+07:00  INFO 20860 --- [qr_menu] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-04T12:35:54.060+07:00  INFO 20860 --- [qr_menu] [Thread-20] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-04T12:35:54.080+07:00  INFO 20860 --- [qr_menu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-04T12:35:54.087+07:00  INFO 20860 --- [qr_menu] [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:35:54.089+07:00  INFO 20860 --- [qr_menu] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-04T12:35:54.091+07:00  INFO 20860 --- [qr_menu] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-04T12:35:54.217+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Starting QrMenuApplication using Java 21.0.1 with PID 20860 (D:\School\Spring Boot\Qr-Menu-API\target\classes started by Nimith-Oeun in D:\School\Spring Boot\Qr-Menu-API)
+2025-08-04T12:35:54.217+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : The following 1 profile is active: "dev"
+2025-08-04T12:35:54.535+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:35:54.535+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-04T12:35:54.544+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-04T12:35:54.548+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-04T12:35:54.548+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-04T12:35:54.553+07:00  INFO 20860 --- [qr_menu] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface persional.qr_menu.repository.MenuItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-04T12:35:54.553+07:00  INFO 20860 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-08-04T12:35:54.644+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-08-04T12:35:54.646+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-04T12:35:54.646+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-04T12:35:54.678+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-04T12:35:54.679+07:00  INFO 20860 --- [qr_menu] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 460 ms
+2025-08-04T12:35:54.731+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-04T12:35:54.734+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-04T12:35:54.743+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-04T12:35:54.744+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-08-04T12:35:54.786+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@65ee3d1d
+2025-08-04T12:35:54.786+07:00  INFO 20860 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-08-04T12:35:54.792+07:00  WARN 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-04T12:35:54.794+07:00  INFO 20860 --- [qr_menu] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-04T12:35:54.834+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-04T12:35:54.849+07:00  INFO 20860 --- [qr_menu] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:35:54.942+07:00  WARN 20860 --- [qr_menu] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-04T12:35:54.954+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-08-04T12:35:55.216+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-04T12:35:55.222+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-04T12:35:55.257+07:00  INFO 20860 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-08-04T12:35:55.264+07:00  INFO 20860 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Started QrMenuApplication in 1.077 seconds (process running for 505.15)
+2025-08-04T12:35:55.269+07:00  INFO 20860 --- [qr_menu] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-04T12:35:58.659+07:00  INFO 20860 --- [qr_menu] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-04T12:35:58.661+07:00  INFO 20860 --- [qr_menu] [Thread-24] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-04T12:35:58.680+07:00  INFO 20860 --- [qr_menu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-04T12:35:58.690+07:00  INFO 20860 --- [qr_menu] [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-04T12:35:58.691+07:00  INFO 20860 --- [qr_menu] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-08-04T12:35:58.695+07:00  INFO 20860 --- [qr_menu] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
