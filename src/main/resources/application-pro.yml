@@ -6,8 +6,13 @@
 MyServer:
   PORT: 8090
 
+#  Database:
+#    HOST: dpg-d24q1gp5pdvs73c4ko0g-a:5432
+#    DB_USERNAME: qr_menu_dtqy
+#    USER: root
+#    PASS: "L1Y8ZZFh8K73yu03Clp4yZqcKMsxvnm2"
   Database:
-    HOST: dpg-d24q1gp5pdvs73c4ko0g-a:5432
-    DB_USERNAME: qr_menu_dtqy
+    HOST: 154.50.17.113:5432
+    DB_USERNAME: Chhong_Coffee
     USER: root
-    PASS: "L1Y8ZZFh8K73yu03Clp4yZqcKMsxvnm2"
+    PASS: "P@ssw0rd()SQL"
