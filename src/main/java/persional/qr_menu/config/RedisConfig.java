@@ -130,9 +130,9 @@ public class RedisConfig {
         Map<String, RedisCacheConfiguration> cacheConfigurations = new HashMap<>();
         
         // Menu data - cached for 2 hours (changes infrequently)
-        cacheConfigurations.put("menu", defaultConfig.entryTtl(Duration.ofDays(1)));
-        cacheConfigurations.put("menuByCategory", defaultConfig.entryTtl(Duration.ofDays(1)));
-        cacheConfigurations.put("menuSeparated", defaultConfig.entryTtl(Duration.ofDays(1)));
+        cacheConfigurations.put("menu", defaultConfig.entryTtl(Duration.ofDays(7)));
+        cacheConfigurations.put("menuByCategory", defaultConfig.entryTtl(Duration.ofDays(7)));
+        cacheConfigurations.put("menuSeparated", defaultConfig.entryTtl(Duration.ofDays(7)));
         
         // Individual items - cached for 30 minutes (may change more frequently)
         cacheConfigurations.put("items", defaultConfig.entryTtl(Duration.ofMinutes(30)));
