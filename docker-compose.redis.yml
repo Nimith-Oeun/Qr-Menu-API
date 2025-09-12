@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: qr-menu-redis
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-}
+    command: >
+      sh -c "
+        if [ ! -z \"$$REDIS_PASSWORD\" ]; then
+          redis-server --requirepass $$REDIS_PASSWORD
+        else
+          redis-server
+        fi
+      "
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - qr-menu-network
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: qr-menu-redis-ui
+    hostname: redis-commander
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-}
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - qr-menu-network
+
+volumes:
+  redis_data:
+    driver: local
+
+networks:
+  qr-menu-network:
+    driver: bridge

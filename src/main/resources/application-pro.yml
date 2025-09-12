@@ -1,5 +1,5 @@
 #===================================================================
-# development Configuration environment
+# Production Configuration environment
 #===================================================================
 
 #Database configuration
@@ -16,3 +16,25 @@ MyServer:
     DB_USERNAME: Chhong_Coffee
     USER: root
     PASS: "P@ssw0rd()SQL"
+
+# Redis configuration for production
+spring:
+  data:
+    redis:
+      host: red-d2850nvdiees73d9lhng
+      port: 6379
+      timeout: 2000ms
+      ssl:
+        enabled: false
+      lettuce:
+        pool:
+          max-active: 10
+          max-idle: 5
+          min-idle: 0
+          max-wait: -1ms
+
+  cache:
+    type: redis
+    redis:
+      time-to-live: 7200000 # 2 hours
+      cache-null-values: false

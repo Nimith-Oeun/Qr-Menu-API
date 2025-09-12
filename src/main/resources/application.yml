@@ -1,17 +1,23 @@
+#===================================================================
+# Configuration environment
+#===================================================================
 
 spring:
   application:
     name: qr_menu
 
+  #Profiles Active
   profiles:
     active: pro
 
+  #Database configuration
   datasource:
     url: jdbc:postgresql://${MyServer.Database.HOST}/${MyServer.Database.DB_USERNAME}
     username: ${MyServer.Database.USER}
     password: ${MyServer.Database.PASS}
     driver-class-name: org.postgresql.Driver
 
+  # JPA / Hibernate configuration
   jpa:
     hibernate:
       ddl-auto: update
@@ -21,10 +27,11 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
 
+  # Redis configuration
   data:
     redis:
-      host: localhost
-      port: 6379
+      host: ${spring.data.redis.host}
+      port: ${spring.data.redis.port}
       timeout: 2000ms
 
   cache:
@@ -32,6 +39,7 @@ spring:
     redis:
       time-to-live: 3600000 # 1 hour
 
+  # File Size upload configuration
   servlet:
     multipart:
       max-file-size: 10MB
