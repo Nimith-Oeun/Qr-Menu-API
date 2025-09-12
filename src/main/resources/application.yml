@@ -8,7 +8,7 @@ spring:
 
   #Profiles Active
   profiles:
-    active: dev
+    active: pro
 
   #Database configuration
   datasource:
