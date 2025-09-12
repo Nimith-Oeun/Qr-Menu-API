@@ -42,9 +42,9 @@ public class MenuController {
     }
     
     @GetMapping("/menu-separated")
-    public ResponseEntity<?> getMenuSeparated() {
+    public ResponseEntity<ApiResponse<MenuResponseDto>> getMenuSeparated() {
         log.info("GET SEPARATED MENU METHOD");
         MenuResponseDto response = menuService.getMenuSeparated();
-        return ResponseEntity.ok(response);
+        return ResponseUtil.success(response, "Separated menu retrieved successfully");
     }
 }

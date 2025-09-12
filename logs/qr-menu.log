@@ -3604,3 +3604,184 @@ java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to cl
 2025-09-12T12:47:04.854+07:00  INFO 17560 --- [qr_menu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-12T12:47:04.856+07:00  INFO 17560 --- [qr_menu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-09-12T12:47:04.859+07:00  INFO 17560 --- [qr_menu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-12T13:42:46.151+07:00  INFO 9820 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Starting QrMenuApplication using Java 21.0.1 with PID 9820 (D:\School\Spring Boot\Qr-Menu-API\target\classes started by Nimith-Oeun in D:\School\Spring Boot\Qr-Menu-API)
+2025-09-12T13:42:46.153+07:00  INFO 9820 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : The following 1 profile is active: "pro"
+2025-09-12T13:42:46.199+07:00  INFO 9820 --- [qr_menu] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-12T13:42:46.200+07:00  INFO 9820 --- [qr_menu] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-12T13:42:47.229+07:00  INFO 9820 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-12T13:42:47.231+07:00  INFO 9820 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-12T13:42:47.345+07:00  INFO 9820 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2025-09-12T13:42:47.355+07:00  INFO 9820 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-12T13:42:47.356+07:00  INFO 9820 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-09-12T13:42:47.367+07:00  INFO 9820 --- [qr_menu] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface persional.qr_menu.repository.MenuItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-09-12T13:42:47.368+07:00  INFO 9820 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-09-12T13:42:48.024+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-09-12T13:42:48.049+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-12T13:42:48.050+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-12T13:42:48.120+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-12T13:42:48.120+07:00  INFO 9820 --- [qr_menu] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1920 ms
+2025-09-12T13:42:48.499+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-12T13:42:48.563+07:00  INFO 9820 --- [qr_menu] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-12T13:42:48.597+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-12T13:42:48.913+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-12T13:42:48.947+07:00  INFO 9820 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-12T13:42:49.496+07:00  INFO 9820 --- [qr_menu] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53feae8b
+2025-09-12T13:42:49.498+07:00  INFO 9820 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-12T13:42:49.542+07:00  WARN 9820 --- [qr_menu] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-12T13:42:49.620+07:00  INFO 9820 --- [qr_menu] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 12.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-12T13:42:50.494+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-12T13:42:50.593+07:00  INFO 9820 --- [qr_menu] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-12T13:42:51.000+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-12T13:42:51.752+07:00  WARN 9820 --- [qr_menu] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-12T13:42:51.792+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-12T13:42:52.620+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-12T13:42:52.626+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-09-12T13:42:52.713+07:00  INFO 9820 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-09-12T13:42:52.726+07:00  INFO 9820 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Started QrMenuApplication in 7.041 seconds (process running for 7.676)
+2025-09-12T13:42:52.900+07:00  INFO 9820 --- [qr_menu] [RMI TCP Connection(3)-192.168.1.197] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-12T13:42:52.900+07:00  INFO 9820 --- [qr_menu] [RMI TCP Connection(3)-192.168.1.197] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-12T13:42:52.904+07:00  INFO 9820 --- [qr_menu] [RMI TCP Connection(3)-192.168.1.197] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-12T13:42:54.221+07:00  WARN 9820 --- [qr_menu] [RMI TCP Connection(4)-192.168.1.197] o.s.b.a.data.redis.RedisHealthIndicator  : Redis health check failed
+
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:940) ~[spring-data-redis-3.5.2.jar:3.5.2]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:902) ~[spring-data-redis-3.5.2.jar:3.5.2]
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:195) ~[spring-data-redis-3.5.2.jar:3.5.2]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144) ~[spring-data-redis-3.5.2.jar:3.5.2]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105) ~[spring-data-redis-3.5.2.jar:3.5.2]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92) ~[spring-data-redis-3.5.2.jar:3.5.2]
+	at org.springframework.boot.actuate.data.redis.RedisHealthIndicator.doHealthCheck(RedisHealthIndicator.java:49) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97) ~[spring-boot-actuator-3.5.4.jar:3.5.4]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed to create socket.
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:108) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.Connection.connect(Connection.java:232) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.Connection.initializeFromClientConfig(Connection.java:455) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.Connection.<init>(Connection.java:77) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.Jedis.<init>(Jedis.java:233) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:170) ~[jedis-6.2.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:557) ~[commons-pool2-2.12.1.jar:2.12.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:299) ~[commons-pool2-2.12.1.jar:2.12.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:231) ~[commons-pool2-2.12.1.jar:2.12.1]
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:38) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:378) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:17) ~[jedis-6.2.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:930) ~[spring-data-redis-3.5.2.jar:3.5.2]
+	... 46 common frames omitted
+Caused by: java.net.UnknownHostException: No such host is known (red-d2850nvdiees73d9lhng)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at redis.clients.jedis.DefaultJedisSocketFactory.connectToFirstSuccessfulHost(DefaultJedisSocketFactory.java:63) ~[jedis-6.2.0.jar:na]
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:94) ~[jedis-6.2.0.jar:na]
+	... 58 common frames omitted
+
+2025-09-12T13:43:23.677+07:00  INFO 9820 --- [qr_menu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-12T13:43:23.690+07:00  INFO 9820 --- [qr_menu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-12T13:43:23.701+07:00  INFO 9820 --- [qr_menu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-12T13:43:23.704+07:00  INFO 9820 --- [qr_menu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-12T13:43:23.896+07:00  INFO 9820 --- [qr_menu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-12T13:43:27.187+07:00  INFO 27004 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Starting QrMenuApplication using Java 21.0.1 with PID 27004 (D:\School\Spring Boot\Qr-Menu-API\target\classes started by Nimith-Oeun in D:\School\Spring Boot\Qr-Menu-API)
+2025-09-12T13:43:27.188+07:00  INFO 27004 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : The following 1 profile is active: "dev"
+2025-09-12T13:43:27.231+07:00  INFO 27004 --- [qr_menu] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-12T13:43:27.231+07:00  INFO 27004 --- [qr_menu] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-12T13:43:28.334+07:00  INFO 27004 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-12T13:43:28.335+07:00  INFO 27004 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-12T13:43:28.428+07:00  INFO 27004 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2025-09-12T13:43:28.438+07:00  INFO 27004 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-12T13:43:28.439+07:00  INFO 27004 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-09-12T13:43:28.450+07:00  INFO 27004 --- [qr_menu] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface persional.qr_menu.repository.MenuItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-09-12T13:43:28.451+07:00  INFO 27004 --- [qr_menu] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-09-12T13:43:28.987+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-09-12T13:43:29.000+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-12T13:43:29.000+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-12T13:43:29.056+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-12T13:43:29.056+07:00  INFO 27004 --- [qr_menu] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1824 ms
+2025-09-12T13:43:29.256+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-12T13:43:29.293+07:00  INFO 27004 --- [qr_menu] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-12T13:43:29.315+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-12T13:43:29.495+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-12T13:43:29.514+07:00  INFO 27004 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-12T13:43:29.646+07:00  INFO 27004 --- [qr_menu] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@626084e6
+2025-09-12T13:43:29.648+07:00  INFO 27004 --- [qr_menu] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-12T13:43:29.678+07:00  WARN 27004 --- [qr_menu] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-12T13:43:29.692+07:00  INFO 27004 --- [qr_menu] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-12T13:43:30.358+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-12T13:43:30.410+07:00  INFO 27004 --- [qr_menu] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-12T13:43:30.735+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-12T13:43:31.260+07:00  WARN 27004 --- [qr_menu] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-12T13:43:31.277+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-12T13:43:31.905+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-12T13:43:31.914+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-09-12T13:43:31.988+07:00  INFO 27004 --- [qr_menu] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-09-12T13:43:32.003+07:00  INFO 27004 --- [qr_menu] [restartedMain] persional.qr_menu.QrMenuApplication      : Started QrMenuApplication in 5.31 seconds (process running for 5.969)
+2025-09-12T13:43:32.298+07:00  INFO 27004 --- [qr_menu] [RMI TCP Connection(1)-192.168.1.197] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-12T13:43:32.298+07:00  INFO 27004 --- [qr_menu] [RMI TCP Connection(1)-192.168.1.197] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-12T13:43:32.300+07:00  INFO 27004 --- [qr_menu] [RMI TCP Connection(1)-192.168.1.197] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-12T13:43:51.602+07:00  INFO 27004 --- [qr_menu] [http-nio-8090-exec-1] p.qr_menu.controller.MenuController      : GET SEPARATED MENU METHOD
+2025-09-12T13:43:51.608+07:00  INFO 27004 --- [qr_menu] [http-nio-8090-exec-1] persional.qr_menu.service.MenuService    : Fetching menu items separated by category
+2025-09-12T13:43:51.608+07:00  INFO 27004 --- [qr_menu] [http-nio-8090-exec-1] persional.qr_menu.service.MenuService    : Fetching menu items by category: DRINK
+2025-09-12T13:43:51.731+07:00  INFO 27004 --- [qr_menu] [http-nio-8090-exec-1] persional.qr_menu.service.MenuService    : Fetching menu items by category: FOOD
+2025-09-12T13:43:51.734+07:00  INFO 27004 --- [qr_menu] [http-nio-8090-exec-1] persional.qr_menu.service.MenuService    : Fetching menu items by category: FOOD_SET
+2025-09-12T13:43:53.134+07:00  INFO 27004 --- [qr_menu] [http-nio-8090-exec-4] p.qr_menu.controller.MenuController      : GET SEPARATED MENU METHOD
+2025-09-12T13:44:05.248+07:00  INFO 27004 --- [qr_menu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-12T13:44:05.264+07:00  INFO 27004 --- [qr_menu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-12T13:44:05.278+07:00  INFO 27004 --- [qr_menu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-12T13:44:05.281+07:00  INFO 27004 --- [qr_menu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-12T13:44:05.284+07:00  INFO 27004 --- [qr_menu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
