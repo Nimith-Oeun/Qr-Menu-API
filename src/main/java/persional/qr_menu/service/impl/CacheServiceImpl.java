@@ -33,7 +33,7 @@ public class CacheServiceImpl implements CacheService {
             // Clear specific menu caches
             clearCache("menu");
             clearCache("menuByCategory");
-            clearCache("separatedMenu");
+            clearCache("menuSeparated");
             clearCache("menuItem");
             
             logger.info("Successfully cleared all menu caches");
@@ -54,7 +54,7 @@ public class CacheServiceImpl implements CacheService {
             
             // Also clear general menu caches as they might contain this category
             clearCache("menu");
-            clearCache("separatedMenu");
+            clearCache("menuSeparated");
             
             logger.info("Successfully cleared cache for category: {}", category);
         } catch (Exception e) {
