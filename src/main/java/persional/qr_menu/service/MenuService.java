@@ -1,7 +1,9 @@
 package persional.qr_menu.service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import persional.qr_menu.dto.MenuItemDto;
 import persional.qr_menu.dto.MenuResponseDto;
@@ -18,22 +20,28 @@ import java.util.stream.Collectors;
 public class MenuService {
     
     private final MenuItemRepository menuItemRepository;
-    
+
+    @Cacheable(value = "menu")
     public List<MenuItemDto> getAllActiveItems() {
+        log.info("Fetching all active menu items");
         List<MenuItem> items = menuItemRepository.findByIsActiveTrue();
         return items.stream()
                 .map(this::convertToDto)
                 .collect(Collectors.toList());
     }
-    
+
+    @Cacheable(value = "menuByCategory", key = "#category")
     public List<MenuItemDto> getItemsByCategory(CategoryType category) {
+        log.info("Fetching menu items by category: {}", category);
         List<MenuItem> items = menuItemRepository.findByCategoryAndIsActiveTrue(category);
         return items.stream()
                 .map(this::convertToDto)
                 .collect(Collectors.toList());
     }
-    
+
+    @Cacheable(value = "menuSeparated")
     public MenuResponseDto getMenuSeparated() {
+        log.info("Fetching menu items separated by category");
         List<MenuItemDto> drinks = getItemsByCategory(CategoryType.DRINK);
         List<MenuItemDto> foods = getItemsByCategory(CategoryType.FOOD);
         List<MenuItemDto> foodSets = getItemsByCategory(CategoryType.FOOD_SET);
@@ -43,6 +51,7 @@ public class MenuService {
                 .foods(foods)
                 .foodSets(foodSets)
                 .build();
+
     }
     
     private MenuItemDto convertToDto(MenuItem item) {

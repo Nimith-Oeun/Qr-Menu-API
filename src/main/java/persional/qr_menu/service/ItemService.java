@@ -2,6 +2,7 @@ package persional.qr_menu.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 import persional.qr_menu.dto.CreateItemRequest;
 import persional.qr_menu.dto.MenuItemDto;
@@ -17,7 +18,8 @@ import java.util.Optional;
 public class ItemService {
     
     private final MenuItemRepository menuItemRepository;
-    
+
+    @CacheEvict(value = {"menu", "menuByCategory", "menuSeparated"}, allEntries = true)
     public MenuItemDto createItem(CreateItemRequest request) {
         MenuItem item = MenuItem.builder()
                 .name(request.getName())
@@ -34,7 +36,8 @@ public class ItemService {
         
         return convertToDto(savedItem);
     }
-    
+
+    @CacheEvict(value = {"menu", "menuByCategory", "menuSeparated"}, allEntries = true)
     public MenuItemDto updateItem(Long id, UpdateItemRequest request) {
         Optional<MenuItem> optionalItem = menuItemRepository.findById(id);
         
@@ -68,7 +71,8 @@ public class ItemService {
         
         return convertToDto(savedItem);
     }
-    
+
+    @CacheEvict(value = {"menu", "menuByCategory", "menuSeparated"}, allEntries = true)
     public void deleteItem(Long id) {
         Optional<MenuItem> optionalItem = menuItemRepository.findById(id);
         

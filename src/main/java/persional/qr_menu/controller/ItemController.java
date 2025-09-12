@@ -27,7 +27,6 @@ public class ItemController {
     private final ItemService itemService;
     
     @PostMapping
-    @CacheEvict(value = {"menu", "menuByCategory", "separatedMenu"}, allEntries = true)
     public ResponseEntity<ApiResponse<MenuItemDto>> createItem(
             @RequestBody @Valid CreateItemRequest request) {
         MenuItemDto item = itemService.createItem(request);
@@ -35,7 +34,6 @@ public class ItemController {
     }
     
     @PutMapping("/{id}")
-    @CacheEvict(value = {"menu", "menuByCategory", "separatedMenu"}, allEntries = true)
     public ResponseEntity<ApiResponse<MenuItemDto>> updateItem(
             @PathVariable Long id, 
             @RequestBody @Valid UpdateItemRequest request) {
@@ -44,7 +42,6 @@ public class ItemController {
     }
     
     @DeleteMapping("/{id}")
-    @CacheEvict(value = {"menu", "menuByCategory", "separatedMenu"}, allEntries = true)
     public ResponseEntity<ApiResponse<Void>> deleteItem(@PathVariable Long id) {
         itemService.deleteItem(id);
         return ResponseUtil.success(null, "Item deleted successfully");

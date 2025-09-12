@@ -27,24 +27,24 @@ public class MenuController {
     private final MenuService menuService;
     
     @GetMapping("/menu")
-    @Cacheable("menu")
     public ResponseEntity<ApiResponse<List<MenuItemDto>>> getAllMenuItems() {
+        log.info("GET MENU METHOD");
         List<MenuItemDto> items = menuService.getAllActiveItems();
         return ResponseUtil.success(items, "Menu items retrieved successfully");
     }
     
     @GetMapping("/menu/{category}")
-    @Cacheable(value = "menuByCategory", key = "#category")
     public ResponseEntity<ApiResponse<List<MenuItemDto>>> getMenuByCategory(
             @PathVariable @Valid CategoryType category) {
+        log.info("GET MENU BY CATEGORY METHOD: {}", category);
         List<MenuItemDto> items = menuService.getItemsByCategory(category);
         return ResponseUtil.success(items, "Menu items retrieved successfully");
     }
     
     @GetMapping("/menu-separated")
-    @Cacheable("separatedMenu")
-    public ResponseEntity<ApiResponse<MenuResponseDto>> getMenuSeparated() {
+    public ResponseEntity<?> getMenuSeparated() {
+        log.info("GET SEPARATED MENU METHOD");
         MenuResponseDto response = menuService.getMenuSeparated();
-        return ResponseUtil.success(response, "Separated menu retrieved successfully");
+        return ResponseEntity.ok(response);
     }
 }

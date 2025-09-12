@@ -4,7 +4,7 @@ spring:
     name: qr_menu
 
   profiles:
-    active: pro
+    active: dev
 
   datasource:
     url: jdbc:postgresql://${MyServer.Database.HOST}/${MyServer.Database.DB_USERNAME}
@@ -27,10 +27,10 @@ spring:
       port: 6379
       timeout: 2000ms
 
-  cache:
-    type: redis
-    redis:
-      time-to-live: 3600000 # 1 hour
+#  cache:
+#    type: redis
+#    redis:
+#      time-to-live: 3600000 # 1 hour
 
   servlet:
     multipart:
