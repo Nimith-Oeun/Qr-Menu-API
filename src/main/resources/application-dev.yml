@@ -7,10 +7,16 @@ MyServer:
   PORT: 8090
 
   Database:
-    HOST: localhost:5432
-    DB_USERNAME: qr_menu
-    USER: postgres
-    PASS: "P@ssw0rd()SQL"
+    HOST: dpg-d3joidur433s739g0uj0-a.singapore-postgres.render.com:5432
+    DB_USERNAME: chhong_coffee
+    USER: root
+    PASS: "TFEiZ7vUgTfjP86b0LBJgWKYHLWQkA1l"
+
+#  Database:
+#    HOST: localhost:5432
+#    DB_USERNAME: qr_menu
+#    USER: postgres
+#    PASS: "P@ssw0rd()SQL"
 
 #Redis configuration for development
 spring:
