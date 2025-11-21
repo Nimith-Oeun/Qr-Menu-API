@@ -9,7 +9,7 @@ RUN mvn clean package -DskipTests
 #
 # package stage
 #
-FROM openjdk:21-jdk-slim
+FROM openjdk:21-slim
 WORKDIR /app
 COPY --from=build /app/target/*.jar /app/qr_menu.jar
 EXPOSE 8083
