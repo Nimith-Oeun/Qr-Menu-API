@@ -8,10 +8,10 @@ MyServer:
 
 # from cloud render.com
   Database:
-    HOST: dpg-d3joidur433s739g0uj0-a:5432
-    DB_USERNAME: chhong_coffee
+    HOST: dpg-d4g4tj7gi27c73b8usig-a:5432
+    DB_USERNAME: chhong_coffee_ary4
     USER: root
-    PASS: "TFEiZ7vUgTfjP86b0LBJgWKYHLWQkA1l"
+    PASS: "gVuCvcAeRWUhfEQb80UAVl199Z3B7nhW"
 
 #From Slave server
 #  Database:
